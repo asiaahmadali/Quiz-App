@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html,body{
+    overflow: hidden;
+}
+.guidlines-container{
+    display: none;
+}
+.quiz-container{
+    display: none;
+}
+.result-section{
+    display: none;
+}
+
+/* main-section styling */
+.main{
+    width: 100%;
+    background-image: url(./bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px 10px 100px;
+    background-color: rgb(110, 132, 192);
+    box-shadow: 0px 0px 10px 0px  white;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(6, 60, 114);
+    text-align: center;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+nav ul li a:hover{
+    color: #00a63d;
+}
+
+/* main home styling */
+
+.home{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    max-width: 500px; 
+}
+.home-content h1{
+    font-size: 3rem;
+}
+.home-content p{
+    text-align: justify;
+    font-size: 1rem;
+}
+.btn{
+    padding: 15px 40px 15px 40px;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.1rem;
+    background-color: dodgerblue;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    background-color: rgb(7, 7, 7);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(194, 52, 52); 
+}
+
+/* guidlines section styling */
+
+.guidlines-container{
+    background-image: url(./t3.jpg);
+    /* background-image: url(./bg-img-2.jpg); */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0; 
+}
+.guidlines{
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    top: 20%;
+    border: 3px solid dodgerblue;
+}
+.guidlines h2{
+    font-size: 2rem;
+    margin: 10px;
+    color: rgb(61, 152, 243);
+    text-align: center;
+}
+.guidlines p{
+   padding: 13px;
+   font-size: 1rem;
+}
+
+.btn-group{
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid dodgerblue;
+   margin-top: 30px;
+}
+.sp-btn{
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    transform: 0.5s;
+    margin: 10px 20px 10px 20px;
+    
+}
+.exit-btn{
+    background: transparent;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.exit-btn:hover{
+    background-color: dodgerblue;
+    box-shadow: 0px 0px 10px dodgerblue;
+    color: white;
+    transition: 0.9s;
+}
+.continue-btn:hover{
+    background-color: black;
+    box-shadow: 0px 0px 10px dodgerblue;
+    color: white;
+    transition: 0.9s;
+}
+
+/* quiz containers section styling */
+
+.quiz-container{
+    height: 100vh;
+    width: 100%; 
+}
+
+.quiz-section{
+    width: 100%;
+    height: 100vh;
+    background:#09001d;
+    /* background:#630653; */
+    color: white;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s ease-in-out;
+    transition-delay: 0.25s; 
+}
+.quiz-box{
+    width: 450px;
+    background:transparent; 
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 28px;
+    position: relative;
+     bottom: 5%;
+    transition: 0.4s ease;
+    transition-delay: 0;
+    transform: scale(0.9);
+}
+.quiz-box h1{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(45deg , transparent , dodgerblue,transparent);
+}
+.quiz-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 2px solid dodgerblue;
+    margin-bottom: 15px;
+}
+.quiz-header span{
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+
+.score{
+    background-color: dodgerblue;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.question{
+    font-size: 1.2rem;
+    margin: 10px 0px 10px 0px;
+}
+.option{
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(26, 135, 243,0.2);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 14px 0;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.option:hover{
+    background-color: rgb(26, 135, 243,0.1) ;
+}
+.quiz-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid dodgerblue;
+    margin-top: 20px;
+}
+.quiz-footer span{
+    font-size: 1.2rem ;
+    font-weight: bold;
+}
+.next-button{
+   background: rgba(255, 255, 255, 0.1);
+   padding: 10px 20px;
+   border: 2px solid rgba(255, 255, 255, 0.1);
+   font-size: 1.1rem;
+   color: white;
+   cursor: pointer;
+   border-radius: 5px;
+   font-weight: bold;
+   outline: none;
+   pointer-events: none;
+   transition: 0.6s;
+   margin-top: 10px;
+}
+.correct{
+    background-color: #04010a;
+    color: #00a63d;
+    border-color: #00a63d ;
+}
+
+.incorrect{
+    color: red;
+    border-color: red ;
+}
+
+.disable{
+    pointer-events: none;
+}
+.next-btn-active{
+    background-color: dodgerblue;
+    color: white;
+    border-color: rgb(9, 81, 153);
+    pointer-events: auto;
+}
+.next-btn-active:hover{
+    background-color: rgb(6, 68, 129);
+    border-color: dodgerblue;
+}
+
+/* result section styling */
+.result-section{
+    width: 100%;
+    height: 100vh;
+    /* background:#630653; */
+    background-color: #09001d;
+}
+.result-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15%;
+    margin: auto;
+    padding: 18px;
+    width: 580px;
+    background:transparent;
+    border: 2px solid dodgerblue;
+    color: white;
+    pointer-events: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.result-box h2{
+    font-size: 2rem;
+}
+.percentage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin: 18px 0px 35px;
+}
+.circular-performance{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: conic-gradient(dodgerblue 3.7deg,rgba(255, 255 , 255, 0.1)0deg);
+    border-radius: 50%;
+}
+.circular-performance::before{
+    content: '';
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background-color:black;
+}
+.performance-value{
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative ;
+}
+
+.score-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.buttons button{
+    background-color: dodgerblue ;
+    border: 1px solid dodgerblue;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0px 18px;
+    transition: 0.5s;
+}
+.buttons button:nth-child(1):hover{
+    background-color: rgb(4, 62, 121);
+    transition: 0.5s;
+}
+.buttons button:nth-child(2){
+    color: dodgerblue;
+    border-color:dodgerblue ;
+    background: transparent;
+}
+.buttons button:nth-child(2):hover{
+    background: dodgerblue;
+    color: white;
+    transition: 0.5s;
+}
+
+nav .open-icon , nav .close-icon{
+    display: none;
+}
+
+/* media queries for responsiveness */
+
+@media(max-width:600px)
+{
+    nav .open-icon , nav .close-icon{
+        font-size: 28px;
+        display: block;
+        color: white;
+    }
+    nav ul{
+      background-color: #ff004f;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      height: 100vh;
+      width: 200px;
+      padding: 100px 0px 0px 30px;
+      display: flex;
+      flex-direction: column;
+       z-index: 2;
+       transition:right 0.8s;
+    }
+    .close-icon{
+        cursor: pointer;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    .home-content{ 
+        max-width: 270px; 
+    }
+    .home-content h1{
+        font-size: 1.3rem;
+    }
+    .home-content p{
+        line-height: 1.4;
+        font-size: 0.9rem;
+    }
+    .btn{
+        padding: 10px 30px 10px 30px;
+        background-color: dodgerblue;
+        margin-top: 10px;
+        
+    }
+}
+
+/*   responsive guidlines section */
+
+@media(max-width:600px)
+{
+    .guidlines{
+        width: 310px;
+        top: 10%;
+    }
+    .guidlines h2{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .guidlines p{
+       text-align: justify;
+       font-size: 0.94rem;
+    }
+    .sp-btn{
+        padding: 8px 10px 8px 10px;
+        font-size: 1rem;
+    }
+    .exit-btn{
+        font-size: 1rem;
+    }
+}
+
+/* responsive quiz section */
+
+@media(max-width:450px)
+{
+    .quiz-box{
+        width: 350px;
+        padding: 12px 22px;
+    }
+    .quiz-box h1{
+        font-size: 2rem;
+    }
+    .question{
+        font-size: 1.1rem;
+    }
+    .option{
+        font-size: 1.05rem;
+    }
+}
+
+/* responsive result section */
+
+@media(max-width:450px)
+{
+    .result-box{
+        top: 15%;
+        padding: 10px;
+        width: 300px;
+    }
+    .result-box h2{
+        font-size: 1.3rem;
+    }
+
+    .score-text{
+        font-size: 1.05rem;
+    }
+   
+    .buttons button{
+        padding: 10px 15px 10px 15px;
+        font-size: 0.9rem;
+        margin: 0px 10px;
+    }
+    .percentage-container{
+        width: 320px;
+        margin: 18px 0px 35px;
+    }
+    .circular-performance{
+        width: 200px;
+        height: 200px;
+    }
+    .circular-performance::before{
+        height: 150px;
+        width: 150px;
+    }
+}

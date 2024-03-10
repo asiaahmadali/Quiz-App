@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap">
+   
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <p class="logo">Quiz.</p>
+            <nav class="nav-bar">
+                <ul id="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-close close-icon" onclick="closeMenu()"></i>
+                </ul>
+                    <i class="fas fa-bars open-icon" onclick="openMenu()"></i>
+            </nav>
+        </header>
+
+        <div class="home">
+            <div class="home-content">
+             <h1>Welcome To Quiz</h1>
+             <p>"Welcome to our Quiz App, where knowledge meets fun! Get ready to test your wits and challenge yourself with our exciting trivia questions.Embark on a thrilling adventure of questions and answers with our Quiz App. Let's see how much you really know!So,Are you ready to put your knowledge to the test?"</p>
+              <button class="btn start-btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+         
+          <!-- Guidlines section -->
+    <div class="guidlines-container">
+    <div class="guidlines"  data-aos="zoom-in-up">
+        <h2>Quiz Guidlines</h2>
+        <p class="guid-para">1. Take a moment to read the instructions or  how it works..</p>
+        <p class="guid-para">2. Read each question carefully before selecting your answer.</p>
+        <p class="guid-para">3. Make sure to consider all options before making answer.</p>
+        <p class="guid-para">4. If the quiz offers lifelines or hints, use them strategically.</p>
+        <p class="guid-para">5. Don't get discouraged if you have answered incorrectly.</p>
+.
+        <div class="btn-group">
+            <button class="exit-btn sp-btn">Exit Quiz</button>
+            <button class="continue-btn sp-btn">Continue</button>
+        </div>
+    </div>
+</div>
+
+    <!-- quiz section -->
+
+       <div class="quiz-container">
+           <div class="quiz-section">
+              <div class="quiz-box">
+                <h1>codehl quiz</h1>
+                <div class="quiz-header">
+                    <span>quiz web</span>
+                    <span class="score">Score : 0/5</span>
+                </div>
+
+                <h2 class="question">What does the HTML stands for ? </h2>
+                <div class="options-list">
+
+                    <div class="option" id="op1">
+                        option 1
+                    </div>
+
+                    <div class="option" id="op2">
+                        option 2
+                    </div>
+
+                    <div class="option" id="op3">
+                        option 3
+                    </div>
+
+                    <div class="option" id="op4" >
+                        option 4
+                    </div>
+
+                </div>
+
+                <div class="quiz-footer">
+                    <span id="q-count">1 of 5 questions</span>
+                    <button class="next-button">Next</button>
+                </div>
+              </div>
+           </div>
+    </div>
+
+   
+
+
+      <!-- quiz result box -->
+      <div class="result-section">
+      <div class="result-box">
+        <h2>Quiz Result</h2>
+        <div class="percentage-container">
+            <div class="circular-performance">
+                <div class="performance-value">0%</div>
+            </div>
+            <span class="score-text">Your score is 0 out of 5</span>
+        </div>
+
+        <div class="buttons">
+            <button class="try-again-btn">Try Again</button>
+            <button class="goto-home-btn">Go to home</button>
+        </div>
+      </div>
+   </div>
+ 
+   <!-- javascript -->
+   <script src="./script.js"></script>
+   <script src="./questions.js"></script>
+
+</body>
+
+
+</html>
